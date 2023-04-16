@@ -1,0 +1,3 @@
+set(RAW_PDB_BUILD_EXAMPLES OFF)
+add_subdirectory(raw_pdb)
+add_subdirectory(ELFIO)
