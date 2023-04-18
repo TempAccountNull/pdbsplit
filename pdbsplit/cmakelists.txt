@@ -1,5 +1,4 @@
 add_executable(pdbsplit
-	Zydis/Zydis.c
 	memory/static_string.cc
 	memory/static_string.hh
 	memory/memory_mapped_file.cc
@@ -32,7 +31,8 @@ target_precompile_headers(pdbsplit
 target_link_libraries(pdbsplit
 	PRIVATE
 	raw_pdb
-	elfio)
+	elfio
+	Zydis)
 
 set_property(TARGET pdbsplit
 	PROPERTY CXX_STANDARD 20)

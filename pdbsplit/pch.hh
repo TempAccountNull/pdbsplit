@@ -16,10 +16,10 @@
 
 #include <elfio/elfio.hpp>
 
+#include <Zydis/Zydis.h>
+
 #define XXH_INLINE_ALL
 #include "../xxHash/xxhash.h"
-
-#include "Zydis/Zydis.h"
 
 #include "memory/memory_mapped_file.hh"
 #include "memory/static_string.hh"
